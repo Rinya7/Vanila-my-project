@@ -1,4 +1,11 @@
 /* Reset styles */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -9,7 +16,11 @@ p {
   margin-top: 0;
 }
 
-p:last-child {
+body {
+  margin: 0;
+}
+
+p {
   margin-bottom: 0;
 }
 
@@ -26,10 +37,19 @@ a {
 
 button {
   cursor: pointer;
+  text-transform: none;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+.is-hidden-mobil {
+  opacity: 0;
+  pointer-events: none;
 }
